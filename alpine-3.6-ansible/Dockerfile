@@ -27,8 +27,8 @@ RUN apk add --update \
             py-openssl \
             wget \
             curl \
-            git
-RUN pip install --upgrade pip  && \
+            git && \
+    pip install --upgrade pip  && \
     pip install ansible  && \
     mkdir /etc/ansible/ /ansible  && \
     echo "[local]" >> /etc/ansible/hosts  && \
