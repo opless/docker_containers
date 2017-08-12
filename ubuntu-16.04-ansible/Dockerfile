@@ -22,7 +22,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
     apt-get install -y --force-yes build-essential cmake git pkg-config \
-                python2-dev wget curl && \
+                python-dev wget curl && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* \
            /tmp/* \
