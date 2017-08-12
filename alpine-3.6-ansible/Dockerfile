@@ -15,8 +15,7 @@ MAINTAINER Simon Waite <opless@gmail.com>
 ENV HOME /root
 
 # Enusure we're update, have a minimal dev environment,
-# Then get rid of apt.
-# Then get pip, as ubuntus version has been fiddled with.
+# Then get/update pip, as various distros are old/get fiddled with.
 # Install latest ansible and set things up for localhost.
 
 RUN apk add --update \ 
